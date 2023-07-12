@@ -1,0 +1,65 @@
+.logo-icon {
+    width: 45px;
+    height: 35px;
+
+    @include tablet() {
+        width: 72px;
+        height: 57px;
+    }
+
+}
+
+.tel-icon {
+    width: 22px;
+    height: 22px;
+
+@include tablet() {
+        width: 24px;
+        height: 24px;
+    }
+
+@include desktop() {
+    width: 28px;
+    height: 28px;
+    }
+}
+
+.nav {
+    display: flex;
+}
+
+.links {
+    display: none;
+
+    @include tablet() {
+      display: flex;
+      justify-content: center;
+    }
+
+}
+
+.link-item {
+    font-size: 20px;
+    &:not(:last-child) {
+        margin-right: 24px;
+
+        @include desktop() {
+            margin-right: 48px;
+          }
+    }
+}
+.header-button {
+    margin-left: 14px;
+    border: none;
+    background-color: $mainColor;
+    padding: 0;
+
+    @include tablet() {
+        display: none;
+    }
+}
+.burger-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+}

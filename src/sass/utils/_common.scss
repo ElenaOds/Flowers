@@ -1,0 +1,48 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    background-color: $mainColor;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.04em;
+    color: $seconaryColor;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    min-width: 320px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include tablet() {
+        padding-right: 24px;
+        padding-left: 24px;
+        padding-top: 24px;
+    }
+
+    @include desktop() {
+        padding-top: 28px;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+li,
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:visited {
+    color: $seconaryColor;
+}
