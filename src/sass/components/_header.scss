@@ -1,3 +1,29 @@
+.header {
+  position: absolute;
+  top: 16px;
+  z-index: 100;
+
+  width: 100%;
+
+  @include tablet() {
+    top: 24px;
+  }
+
+@include desktop() {
+    top: 28px;
+  }
+}
+
+.header-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include padding();
+
+}
+
 .logo-icon {
     width: 45px;
     height: 35px;
@@ -26,6 +52,7 @@
 
 .nav {
     display: flex;
+    align-items: center;
 }
 
 .links {
@@ -48,11 +75,8 @@
           }
     }
 }
-.header-button {
+.burger-button {
     margin-left: 14px;
-    border: none;
-    background-color: $mainColor;
-    padding: 0;
 
     @include tablet() {
         display: none;

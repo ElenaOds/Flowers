@@ -15,3 +15,15 @@
         @content;
     }
 }
+
+@mixin padding {
+    padding: 0 16px;
+
+    @include tablet() {
+        padding: 0 24px;
+    }
+        
+    @include desktop() {
+        padding: 0 28px;
+    }
+}

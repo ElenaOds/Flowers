@@ -7,42 +7,59 @@ body {
     color: $seconaryColor;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.container {
-    min-width: 320px;
-    padding-right: 16px;
-    padding-left: 16px;
-    padding-top: 16px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+button {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
 
-    @include tablet() {
-        padding-right: 24px;
-        padding-left: 24px;
-        padding-top: 24px;
-    }
+// .container {
+//     min-width: 320px;
+//     padding-right: 16px;
+//     padding-left: 16px;
+//     padding-top: 16px;
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
 
-    @include desktop() {
-        padding-top: 28px;
-    }
-}
+//     @include tablet() {
+//         padding-right: 24px;
+//         padding-left: 24px;
+//         padding-top: 24px;
+//     }
 
-ul {
-    list-style: none;
-}
+//     @include desktop() {
+//         padding-top: 28px;
+//     }
+// }
 
-li,
-a,
-a:visited {
-    text-decoration: none;
-}
 
-a:visited {
-    color: $seconaryColor;
-}
+
+
