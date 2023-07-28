@@ -1,8 +1,7 @@
 .hero {
     position: relative;
     width: 100%;
-    height: 288px;
-    height: 878px;
+    height: 389px;
     margin: 0 auto 100 auto;
 
     @include tablet() {
@@ -10,8 +9,9 @@
       }
 
     @include desktop() {
-        height: 878px;  
+        height: 850px;  
       }
+    @include padding();
   }
 
   .hero-container {
@@ -38,15 +38,18 @@
     font-weight: 400;
     font-size: 52px;
     line-height: calc(195 / 160);
+    --shift-to-y: -157px;
   
     animation: move-vertical 1000ms ease-out 1000ms both;
 
     @include tablet() {
         font-size: 120px;
+        --shift-to-y: -334px;
       }
 
     @include desktop() {
         font-size: 160px;
+        --shift-to-y: -355px;
       }
   }
   .hero-title::after {
@@ -77,36 +80,44 @@
   }
   .hero-badge {
     width: 46px;
-    margin-left: 100px;
     font-size: 14px;
     line-height: 17px;
+    --shift-from-x: 0;
+    --shift-to-x: -10px;
+    --shift-to-y: 80px;
   
     animation: move-vertical 1000ms ease-out 1000ms both;
 
     @include tablet() {
         width: 76px;
-        margin-left: 120px;
         font-size: 24px;
         line-height: 29px;
+        --shift-to-x: -20px;
+        --shift-to-y: 160px;
       }
 
     @include desktop() {
         width: 102px;
-        margin-left: 210px;
         font-size: 32px;
         line-height: 39px;
+        --shift-to-x: -90px;
+        --shift-to-y: 170px;
       }
   }
   .hero-btn {
-    margin-right: 16px;
     animation: move-vertical 1000ms ease-out 1000ms both;
+    --shift-from-x: 0;
+    --shift-to-x: 11px;
+    --shift-to-y: 80px;
 
     @include tablet() {
-        margin-right: 24px;
+        --shift-to-x: 5px;
+        --shift-to-y: 160px;
       }
 
     @include desktop() {
-        margin-right: 145px;
+        --shift-to-x: 25px;
+        --shift-to-y: 170px;
       }
   }
 

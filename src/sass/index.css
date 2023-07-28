@@ -42,24 +42,6 @@ button {
   background-color: transparent;
 }
 
-section {
-  padding-right: 16px;
-  padding-left: 16px;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  section {
-    padding-right: 24px;
-    padding-left: 24px;
-    margin-bottom: 100px;
-  }
-}
-
-h2 {
-  font-weight: 700px;
-  font-size: 24px;
-}
-
 .header {
   position: absolute;
   top: 16px;
@@ -169,9 +151,9 @@ h2 {
 .hero {
   position: relative;
   width: 100%;
-  height: 288px;
-  height: 878px;
+  height: 389px;
   margin: 0 auto 100 auto;
+  padding: 0 16px;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -180,7 +162,17 @@ h2 {
 }
 @media screen and (min-width: 1280px) {
   .hero {
-    height: 878px;
+    height: 850px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 0 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding: 0 28px;
   }
 }
 
@@ -214,16 +206,19 @@ h2 {
   font-weight: 400;
   font-size: 52px;
   line-height: 1.21875;
+  --shift-to-y: -157px;
   animation: move-vertical 1000ms ease-out 1000ms both;
 }
 @media screen and (min-width: 768px) {
   .hero-title {
     font-size: 120px;
+    --shift-to-y: -334px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-title {
     font-size: 160px;
+    --shift-to-y: -355px;
   }
 }
 
@@ -255,40 +250,48 @@ h2 {
 
 .hero-badge {
   width: 46px;
-  margin-left: 100px;
   font-size: 14px;
   line-height: 17px;
+  --shift-from-x: 0;
+  --shift-to-x: -10px;
+  --shift-to-y: 80px;
   animation: move-vertical 1000ms ease-out 1000ms both;
 }
 @media screen and (min-width: 768px) {
   .hero-badge {
     width: 76px;
-    margin-left: 120px;
     font-size: 24px;
     line-height: 29px;
+    --shift-to-x: -20px;
+    --shift-to-y: 160px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-badge {
     width: 102px;
-    margin-left: 210px;
     font-size: 32px;
     line-height: 39px;
+    --shift-to-x: -90px;
+    --shift-to-y: 170px;
   }
 }
 
 .hero-btn {
-  margin-right: 16px;
   animation: move-vertical 1000ms ease-out 1000ms both;
+  --shift-from-x: 0;
+  --shift-to-x: 11px;
+  --shift-to-y: 80px;
 }
 @media screen and (min-width: 768px) {
   .hero-btn {
-    margin-right: 24px;
+    --shift-to-x: 5px;
+    --shift-to-y: 160px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-btn {
-    margin-right: 145px;
+    --shift-to-x: 25px;
+    --shift-to-y: 170px;
   }
 }
 
@@ -379,5 +382,74 @@ h2 {
   }
   to {
     transform: rotate(0);
+  }
+}
+.section {
+  margin-bottom: 60px;
+  padding: 0 16px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 0 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section {
+    padding: 0 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    margin-bottom: 100px;
+  }
+}
+
+h2 {
+  position: relative;
+  font-weight: 700px;
+  font-size: 24px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 44px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  h2 {
+    margin-bottom: 80px;
+  }
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-left: 14px;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+}
+@media screen and (min-width: 768px) {
+  h2::after {
+    margin-left: 16px;
+  }
+}
+
+.text {
+  font-weight: 400px;
+  font-size: 22px;
+  color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .text {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .text {
+    margin-right: 22px;
   }
 }/*# sourceMappingURL=index.css.map */
