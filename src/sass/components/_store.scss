@@ -1,0 +1,95 @@
+.store-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+
+.store-item {
+    width: calc((100% - 4 * 16px) / 2);
+        margin: 16px;
+}
+
+.store-img {
+   width: 100%;
+   margin-bottom: 12px;
+     
+   @include tablet() {
+    margin-bottom: 16px;
+ }
+
+}
+
+.bouquet-size {
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 6px;
+
+    @include tablet() {
+        font-size: 32px;
+        margin-bottom: 8px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            margin-left: 8px;
+            width: 100%;
+            height: 0.5px;
+            background-color: $seconaryColor;
+        }
+    }
+
+     @include desktop() {
+        font-size: 36px;
+        margin-bottom: 4px;
+
+        &::after {
+            margin-left: 16px;
+        }
+    }
+}
+
+.bouquet-price {
+    font-weight: 600;
+    font-size: 12px;
+  
+    @include tablet() {
+        font-size: 24px;      
+    }
+
+    @include desktop() {
+        font-size: 28px;
+    }
+}
+
+.store-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 208px;
+    height: 44px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: $btnColor;
+    color: $mainColor;
+    border-radius: 38px;
+
+    &:hover {
+        background-color: $btnHover;
+    }
+    &:focus {
+        background-color: $btnFocus;
+    }
+
+    @include tablet() {
+        width: 280px;
+        height: 64px;  
+        padding: 20px;  
+        font-size: 28px;
+    }
+}

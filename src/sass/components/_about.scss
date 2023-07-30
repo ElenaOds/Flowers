@@ -1,0 +1,35 @@
+.text {
+    font-weight: 400px;
+    font-size: 16px;
+    color: $seconaryColor;
+    margin-bottom: 16px;
+  
+    @include tablet() {
+      margin-right: 54px;
+   }
+  
+    @include desktop() {
+      margin-right: 90px;
+  }
+  }
+
+  .wrapper {
+    @include tablet() {
+        display: flex;
+        align-items: center;
+     }
+  }
+
+  .about-img {
+     @include mobile() {
+       width: 288px;
+     }
+ 
+    @include tablet() {
+        width: 344px;
+     }
+    
+     @include desktop() {
+        width: 632px;
+     }
+  }

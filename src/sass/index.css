@@ -440,16 +440,49 @@ h2::after {
 
 .text {
   font-weight: 400px;
-  font-size: 22px;
+  font-size: 16px;
   color: #000000;
+  margin-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
   .text {
-    margin-right: 20px;
+    margin-right: 54px;
   }
 }
 @media screen and (min-width: 1280px) {
   .text {
-    margin-right: 22px;
+    margin-right: 90px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .about-img {
+    width: 288px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-img {
+    width: 344px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-img {
+    width: 632px;
+  }
+}
+
+.store-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.store-img {
+  width: 100px;
 }/*# sourceMappingURL=index.css.map */

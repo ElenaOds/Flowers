@@ -1,7 +1,7 @@
 .section {
   margin-bottom: 60px;
-  @include padding();
-  
+  @include padding();  
+
     @include tablet() {
       margin-bottom: 100px;
     }     
@@ -36,19 +36,4 @@ h2::after {
   @include tablet() {
     margin-left: 16px;
  }
-}
-
-.text {
-  font-weight: 400px;
-  font-size: 22px;
-  color: $seconaryColor;
-
-  @include tablet() {
-    margin-right: 20px;
- }
-
-  @include desktop() {
-    margin-right: 22px;
-}
-
 }
