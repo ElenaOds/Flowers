@@ -1,0 +1,63 @@
+.list {
+    margin-bottom: 26px;
+
+    @include tablet() {
+        margin-bottom: 40px;
+    }
+
+    @include desktop() {
+        margin-bottom: 60px;
+    }
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    @extend %text;
+
+    @include tablet() {
+        font-size: 24px;
+    }
+
+    @include desktop() {
+        font-size: 32px;
+    }
+}
+
+.item:not(:last-child) {
+    margin-bottom: 14px;
+
+    @include tablet() {
+        margin-bottom: 20px;
+    }
+
+    @include desktop() {
+        margin-bottom: 32px;
+    }
+}
+
+.number {
+  display: block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid $seconaryColor;
+  text-align: center;
+  @extend %text;
+  font-size: 20px;
+  margin-right: 8px;
+
+  @include tablet() {
+    width: 64px;
+    height: 64px;
+    padding: 16px;
+    font-size: 26px;
+    margin-right: 20px;
+ }
+
+  @include desktop() {
+    margin-right: 56px;
+  }
+}
+

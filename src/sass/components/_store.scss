@@ -2,12 +2,16 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 32px;
+
+    @include tablet() {
+        margin-bottom: 60px;
+     }
 }
 
 
 .store-item {
     width: calc((100% - 4 * 16px) / 2);
-        margin: 16px;
+    margin: 16px;   
 }
 
 .store-img {

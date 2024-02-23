@@ -1,0 +1,24 @@
+.carousel {
+    margin-bottom: 4px;
+
+    @include tablet() {
+        margin-bottom: 8px;
+    }
+
+    @include desktop() {
+        margin-bottom: 18px;
+     }
+}
+.slick-slide {
+    margin: 0 16px;
+}
+
+
+.blog-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+   
+
+}

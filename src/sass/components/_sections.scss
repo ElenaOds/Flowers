@@ -1,6 +1,5 @@
 .section {
   margin-bottom: 60px;
-  @include padding();  
 
     @include tablet() {
       margin-bottom: 100px;
@@ -36,4 +35,8 @@ h2::after {
   @include tablet() {
     margin-left: 16px;
  }
+}
+
+.container {
+  @include padding();
 }

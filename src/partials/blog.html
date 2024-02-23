@@ -1,3 +1,64 @@
 <section class="section">
-    <h2>BLOG</h2>
+    <div class="container">
+        <h2>BLOG</h2>
+        <ul class="carousel">
+            <li class="slider-item">
+                <img
+                srcset="
+                ./images/blog1_mobile@1x.jpg 136w, 
+                ./images/blog1_mobile@2x.jpg 272w, 
+                ./images/blog1_tablet@1x.jpg 344w,
+                ./images/blog1_tablet@2x.jpg 688w,
+                ./images/blog1_desktop@1x.jpg 390w,
+                ./images/blog1_desktop@2x.jpg 780w"
+                src="./images/blog1_mobile@1x.jpg" 
+              alt="First flower in the blog section"
+              sizes="(min-width: 768px) 30vw, 50vw"
+              loading ="lazy"> 
+            </li>
+            <li class="blog-item">
+                <img
+                srcset="
+                ./images/blog2_mobile@1x.jpg 136w, 
+                ./images/blog2_mobile@2x.jpg 272w, 
+                ./images/blog2_tablet@1x.jpg 344w,
+                ./images/blog2_tablet@2x.jpg 688w,
+                ./images/blog2_desktop@1x.jpg 390w,
+                ./images/blog2_desktop@2x.jpg 780w"
+                src="./images/blog2_mobile@1x.jpg" 
+              alt="Second flower in the blog section"
+              sizes="(min-width: 768px) 30vw, 50vw"
+              loading ="lazy"> 
+            </li>
+            <li class="blog-item">
+                <img
+                srcset="
+                ./images/blog3_mobile@1x.jpg 136w, 
+                ./images/blog3_mobile@2x.jpg 272w, 
+                ./images/blog3_tablet@1x.jpg 344w,
+                ./images/blog3_tablet@2x.jpg 688w,
+                ./images/blog3_desktop@1x.jpg 390w,
+                ./images/blog3_desktop@2x.jpg 780w"
+                src="./images/blog3_mobile@1x.jpg" 
+              alt="Third flower in the blog section"
+              sizes="(min-width: 768px) 30vw, 50vw"
+              loading ="lazy"> 
+            </li>
+            
+        </ul>
+
+        <div class="blog-buttons">
+            <button type="button" class="next">
+                <svg class="logo-icon">
+                    <use href="./images/sprite.svg#icon-arrow-left"></use>
+                 </svg>
+            </button>
+            <button type="button" class="prev">
+                <svg class="logo-icon">
+                    <use href="./images/sprite.svg#icon-arrow-right"></use>
+                 </svg>
+            </button>
+         </div>
+   
+    </div>
 </section>
