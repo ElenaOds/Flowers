@@ -3,6 +3,7 @@
 
     @include tablet() {
         margin-bottom: 8px;
+        margin-left: -10px;
     }
 
     @include desktop() {
@@ -11,6 +12,10 @@
 }
 .slick-slide {
     margin: 0 16px;
+
+    @include tablet() {
+        margin: 0 16px;
+    }
 }
 
 
@@ -19,6 +24,27 @@
     justify-content: center;
     align-items: center;
     gap: 25px;
+    margin-bottom: 14px;
    
+    @include tablet() {
+        margin-bottom: 18px;
+    }
 
+    @include desktop() {
+        margin-bottom: 24px;
+    }
 }
+
+.blog-text {
+    text-align: center;
+    @extend %text;
+    font-size: 18px;
+    margin-bottom: 24px;
+
+    @include tablet() {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+}
+
+

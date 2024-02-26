@@ -1,0 +1,28 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 208px;
+    height: 44px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: $btnColor;
+    color: $mainColor;
+    border-radius: 38px;
+
+    &:hover {
+        background-color: $btnHover;
+    }
+    &:focus {
+        background-color: $btnFocus;
+    }
+
+    @include tablet() {
+        width: 280px;
+        height: 64px;  
+        padding: 20px;  
+        font-size: 28px;
+    }
+}

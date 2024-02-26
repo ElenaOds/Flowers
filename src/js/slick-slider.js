@@ -6,7 +6,7 @@ $(document).ready(function(){
     swipeToSlide: true,
     autoplay: true,
     autoplaySpeed: 7000,
-    slidesToShow: 2.98,
+    slidesToShow: 2.99,
     slidesToScroll: 1,
     arrows: true,
     prevArrow: $('.prev'),

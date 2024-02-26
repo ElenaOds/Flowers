@@ -1,5 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-.number, .item {
+.footer-text, .footer-list, .footer-title, .blog-text, .number, .item {
   font-family: Montserrat;
   font-weight: 500;
   font-size: 14px;
@@ -14,6 +14,11 @@ body {
   color: #000000;
 }
 
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -25,7 +30,8 @@ p {
 }
 
 ul,
-ol {
+ol,
+li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -152,6 +158,11 @@ button {
   width: 24px;
   height: 24px;
   display: block;
+}
+
+.burger-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .hero {
@@ -487,9 +498,39 @@ h2::after {
   }
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 208px;
+  height: 44px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #E86F54;
+  color: #fff;
+  border-radius: 38px;
+}
+.button:hover {
+  background-color: #E25B41;
+}
+.button:focus {
+  background-color: #FA6F54;
+}
+@media screen and (min-width: 768px) {
+  .button {
+    width: 280px;
+    height: 64px;
+    padding: 20px;
+    font-size: 28px;
+  }
+}
+
 .store-list {
   display: flex;
   flex-wrap: wrap;
+  margin: -16px;
   margin-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
@@ -556,35 +597,6 @@ h2::after {
 }
 @media screen and (min-width: 1280px) {
   .bouquet-price {
-    font-size: 28px;
-  }
-}
-
-.store-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  width: 208px;
-  height: 44px;
-  padding: 10px;
-  font-weight: 500;
-  font-size: 20px;
-  background-color: #E86F54;
-  color: #fff;
-  border-radius: 38px;
-}
-.store-button:hover {
-  background-color: #E25B41;
-}
-.store-button:focus {
-  background-color: #FA6F54;
-}
-@media screen and (min-width: 768px) {
-  .store-button {
-    width: 280px;
-    height: 64px;
-    padding: 20px;
     font-size: 28px;
   }
 }
@@ -664,6 +676,7 @@ h2::after {
 @media screen and (min-width: 768px) {
   .carousel {
     margin-bottom: 8px;
+    margin-left: -10px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -675,10 +688,150 @@ h2::after {
 .slick-slide {
   margin: 0 16px;
 }
+@media screen and (min-width: 768px) {
+  .slick-slide {
+    margin: 0 16px;
+  }
+}
 
 .blog-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 768px) {
+  .blog-buttons {
+    margin-bottom: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .blog-buttons {
+    margin-bottom: 24px;
+  }
+}
+
+.blog-text {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .blog-text {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.footer {
+  padding: 32px 16px;
+  background: repeating-linear-gradient(90deg, #000, #000 16px, rgba(0, 0, 0, 0.8) 16px, rgba(0, 0, 0, 0.8) 152px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 60px 40px 54px 60px;
+    background: repeating-linear-gradient(90deg, #000, #000 24px, rgba(0, 0, 0, 0.8) 24px, rgba(0, 0, 0, 0.8) 160px);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 72px 48px 72px 24px;
+    background: repeating-linear-gradient(90deg, #000, #000 24px, rgba(0, 0, 0, 0.8) 24px, rgba(0, 0, 0, 0.8) 80px);
+  }
+}
+
+.logo-icon_footer {
+  fill: #fff;
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .logo-icon_footer {
+    display: block;
+  }
+}
+
+.footer-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+@media screen and (min-width: 768px) {
+  .footer-title {
+    font-size: 20px;
+  }
+}
+
+.footer-list {
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .footer-list {
+    font-size: 16px;
+  }
+}
+
+.footer-list:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.footer-text {
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .footer-text {
+    font-size: 16px;
+  }
+}
+
+.icon_footer {
+  fill: #fff;
+  stroke: #fff;
+  width: 32px;
+  height: 32px;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 44px;
+  }
+}
+
+.box1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+@media screen and (min-width: 768px) {
+  .box1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+}
+
+.box2 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.box3 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.box4 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 14px;
 }/*# sourceMappingURL=index.css.map */

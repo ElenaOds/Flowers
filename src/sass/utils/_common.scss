@@ -7,6 +7,11 @@ body {
     color: $seconaryColor;
 }
 
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -18,7 +23,8 @@ p {
 }
 
 ul,
-ol {
+ol,
+li {
   margin: 0;
   padding: 0;
   list-style: none;

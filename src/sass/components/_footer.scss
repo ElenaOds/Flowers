@@ -1,0 +1,167 @@
+.footer {
+    padding: 32px 16px;
+    background: repeating-linear-gradient( -45deg, 
+       #000, #000 16px,
+       rgba(0, 0, 0, 0.8) 16px, rgba(0, 0, 0, 0.8) 48px);
+    box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @include tablet() {
+        padding: 60px 40px 54px 24px;
+     }
+
+     @include desktop() {
+        padding: 72px 48px 72px 24px;
+      }
+}
+
+
+
+.footer-title {
+    @extend %text;
+    color: $mainColor;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 18px;
+
+    @include tablet() {
+        font-size: 20px;
+    }
+}
+
+.footer-list {
+    @extend %text;
+    color: $mainColor;
+    
+
+    @include tablet() {
+        font-size: 16px;
+    }
+}
+
+.footer-list:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.footer-text {
+    @extend %text;
+    color: $mainColor;
+
+    @include tablet() {
+        font-size: 16px;
+    }
+}
+
+.icon_footer {
+    width: 28px;
+    height: 28px;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+
+    @include tablet() {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    @include desktop() {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+    @include tablet() {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    @include desktop() {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+}
+
+.box2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+    @include tablet() {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    @include desktop() {
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+}
+
+.box3 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+    @include tablet() {
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+
+    @include desktop() {
+        grid-column-start: 4;
+        grid-row-start: 1;
+    }
+}
+
+.box4 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+
+    @include tablet() {
+        grid-column-start: 4;
+        grid-row-start: 1;
+    }
+
+    @include desktop() {
+        grid-column-start: 5;
+        grid-row-start: 1;
+    }
+}
+
+.footer-icons {
+    display: flex;
+    gap: 14px;
+
+    @include tablet() {
+        flex-direction: column;
+        gap: 18px;
+        align-items: end;
+    }
+}
+
+.box5 {
+    fill: #fff;
+    display: none;
+
+    @include desktop() {
+        display: block;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+}
+
+.email {
+    display: block;
+
+    @include tablet() {
+       display: inline;
+    }
+}
+
+.footer-logo {
+    width: 73px;
+    height: 57px;
+}
