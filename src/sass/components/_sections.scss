@@ -1,5 +1,7 @@
 .section {
   margin-bottom: 60px;
+  position: relative;
+  z-index: 10;
 
     @include tablet() {
       margin-bottom: 100px;

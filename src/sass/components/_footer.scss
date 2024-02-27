@@ -14,8 +14,6 @@
       }
 }
 
-
-
 .footer-title {
     @extend %text;
     color: $mainColor;
@@ -28,10 +26,14 @@
     }
 }
 
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-list {
     @extend %text;
     color: $mainColor;
-    
 
     @include tablet() {
         font-size: 16px;
