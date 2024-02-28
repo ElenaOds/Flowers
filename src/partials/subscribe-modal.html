@@ -1,0 +1,48 @@
+<div class="backdrop is-hidden" data-modal>
+
+<div class="subscribe-modal is-hidden">
+    <button type="button" 
+        class="modal-close-button" data-modal-close>
+          <svg class="modal-close-icon" area-label="modal window switcher">
+                <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+    </button>
+
+    <div class="thumb">
+    <picture>
+        <source srcset="
+        ./images/subscribe_mobile@1x.jpg 272w, 
+        ./images/subscribe_mobile@2x.jpg 544w" 
+        media="(max-width: 767px)" 
+        sizes="100vw"
+        loading ="lazy">
+
+        <source srcset="
+        ./images/subscribe_tablet@1x.jpg 588w,
+        ./images/subscribe_tablet@2x.jpg 1176w"
+        media="(max-width: 1279px)" 
+        sizes="100vw"
+        loading ="lazy">
+        
+        <source srcset="
+        ./images/subscribe_desktop@1x.jpg 428w,
+        ./images/subscribe_desktop@2x.jpg 856w"
+        media="(min-width: 1280px)" 
+        sizes="100vw"
+        loading ="lazy">
+
+        <img src=" ./images/subscribe_mobile@1x.jpg" alt="Flower in subscribe form window">
+      </picture>
+    </div>
+
+    <form autocomplete="off" class="subscribe-form">
+        <h3 class="form-title">Follow our newsletter</h3>
+        <p class="form-text">Be the first to get exclusive offers and the latest  news on our product directly in your box.</p>
+        <label for="email" class="form-label">Email</label>
+        <div>
+            <input type="email" name="email" id="email" placeholder="Your email" class="form-input" required/>
+        </div>
+     <button type="submit" class="form-button" disabled>Subscribe</button>
+    </form>
+</div>
+</div>

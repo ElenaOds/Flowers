@@ -1,7 +1,7 @@
 .header {
   position: absolute;
   top: 16px;
-  z-index: 100;
+  z-index: 20;
   width: 100%;
 
   @include tablet() {
@@ -94,7 +94,7 @@
     width: 100vw;
     height: 100vh;
     background: $btnColor;
-    z-index: 999;
+    z-index: 10;
 
     transform: translateX(100%);
 
@@ -107,6 +107,7 @@
         position: absolute;
         top: 16px;
         right: 16px;
+        stroke: $mainColor;
       }
   }
 

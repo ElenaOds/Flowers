@@ -1,0 +1,212 @@
+.subscribe-modal {
+    position: absolute;
+    // z-index: 9999;
+    top: 60;
+    left: 24;
+    right: 24;
+    max-width: 480px;
+ 
+    background: $mainColor;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+    @include tablet() {
+        max-width: 588px;
+        left: 90;
+        right: 90;
+    }
+
+     @include desktop() {
+        display: flex;
+        max-width: 860px;
+    }
+
+    // & .modal-close-button {
+    //     position: fixed;
+    //     top: 14px;
+    //     right: 14px;
+
+    //     @include tablet() {
+    //         top: 24px;
+    //         right: 24px;
+    
+    //     }
+    //   }
+}
+
+.thumb {
+    margin-bottom: 18px;
+
+    @include tablet() {
+        margin-bottom: 28px;
+    }
+
+    @include desktop() {
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+}
+
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px 28px 16px;
+
+    @include tablet() {
+        padding: 0 118px 40px 118px;
+     }
+
+     @include desktop() {
+        padding: 110px 40px 110px 0;
+    }
+}
+
+.form-title {
+    @extend %text;
+    font-weight: 600;
+    font-size: 19px;
+    margin-bottom: 14px;
+    text-align: center;
+
+    @include tablet() {
+        font-size: 28px;
+        margin-bottom: 24px;
+     }
+}
+
+.form-text {
+    @extend %text;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 18px;
+    text-align: center;
+    color: #5C5C5C;
+
+    @include tablet() {
+        font-size: 16px;
+        margin-bottom: 32px;
+     }
+}
+
+.form-label {
+    @extend %text;
+    font-size: 10px;
+    margin-bottom: 8px; 
+    color: #5C5C5C;
+
+    @include tablet() {
+        font-size: 14px;
+     }
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    @extend %text;
+    font-size: 12px;
+    margin-bottom: 18px; 
+    outline: none;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+
+    @include tablet() {
+        padding: 16px 12px;
+        margin-bottom: 28px; 
+        font-size: 14px;
+     }
+    
+    &::placeholder {
+        @extend %text;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.3);
+
+        @include tablet() {
+            font-size: 14px;
+         }
+    }  
+
+    &:hover,
+    &:focus {
+        border-color: rgba(0, 0, 0, 0.7);
+    }
+
+    &:placeholder-shown {
+        border-color: #D7D7D7;
+        &:hover,
+        &:focus {
+        border-color: rgba(0, 0, 0, 0.7);
+    }
+    }
+
+    &:not(:placeholder-shown):required:invalid {
+        border-color: $invalidInput;
+    }
+
+    &:not(:placeholder-shown):required:valid {
+        border-color: $validInput;
+    }
+}
+
+
+.form-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 236px;
+    height: 37px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: $btnColor;
+    color: $mainColor;
+    border-radius: 8px;
+
+    &:hover {
+        background-color: $btnHover;
+    }
+    &:focus {
+        background-color: $btnFocus;
+    }
+
+    &:disabled {
+        background-color: $btnDisabled;
+        cursor: not-allowed;
+    }
+
+    @include tablet() {
+        width: 336px;
+        height: 50px;  
+        padding: 14px;  
+        font-size: 18px;
+    
+    }
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 14;
+    right: 14;
+    border: none;
+     cursor: pointer;
+    outline: none;
+
+     @include tablet() {
+         top: 24;
+        right: 24;
+    }
+}
+
+.modal-close-icon {
+    stroke: $seconaryColor;
+    width: 18px;
+    height: 18px;
+
+    @include tablet() {
+        width: 24px;
+        height: 24px;
+    }
+}
