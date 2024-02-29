@@ -11,7 +11,8 @@
     
     overflow-y: scroll;
     
-    &.is-hidden {
+    &.is-hidden,
+    &.is-hidden-contact {
         opacity: 0;
         pointer-events: none;
     }

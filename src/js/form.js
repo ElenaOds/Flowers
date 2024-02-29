@@ -4,6 +4,7 @@
     const subscribeForm = document.querySelector('.js-subscribe-form');
     const input = document.querySelector('.js-subscribe-input');
     const button = document.querySelector('.js-subscribe-button');
+    const label = document.querySelector('.js-subscribe-label');
 
     subscribeForm.addEventListener('submit', onFormSubmit);
     input.addEventListener('input', onInputChange);
@@ -28,20 +29,26 @@
         button.disabled = true;
         input.classList.remove('valid');
         input.classList.remove('invalid');
+        label.classList.remove('valid');
+        label.classList.remove('invalid');
     }
 
     function onInputChange(event) {
         input.classList.remove('valid');
         input.classList.remove('invalid');
+        label.classList.remove('valid');
+        label.classList.remove('invalid');
 
         if (event.currentTarget.value.match(emailRegex)) {
 
             button.disabled = false;
-            input.classList.add('valid')
+            input.classList.add('valid');
+            label.classList.add('valid');
         } else {
           
             button.disabled = true;
-            input.classList.add('invalid')
+            input.classList.add('invalid');
+            label.classList.add('invalid')
         }
     }
 })();
