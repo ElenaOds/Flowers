@@ -132,24 +132,15 @@
     &:focus {
         border-color: rgba(0, 0, 0, 0.7);
     }
-
-    &:placeholder-shown {
-        border-color: #D7D7D7;
-        &:hover,
-        &:focus {
-        border-color: rgba(0, 0, 0, 0.7);
-    }
-    }
-
-    &:not(:placeholder-shown):required:invalid {
-        border-color: $invalidInput;
-    }
-
-    &:not(:placeholder-shown):required:valid {
-        border-color: $validInput;
-    }
 }
 
+.form-input.valid {
+    border-color: $validInput;
+}
+
+.form-input.invalid {
+    border-color: $invalidInput;
+}
 
 .form-button {
     display: flex;
