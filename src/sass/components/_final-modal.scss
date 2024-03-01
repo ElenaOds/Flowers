@@ -1,0 +1,82 @@
+.final-modal {
+    position: absolute;
+    top: 90;
+    left: 24;
+    right: 24;
+    max-width: 480px;
+    padding: 44px 16px 32px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    background: $mainColor;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+    @include tablet() {
+        left: 144;
+        right: 144;
+        padding: 54px 32px;
+    }
+}
+
+.final-title {
+    @extend %text;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 14px;
+
+
+    @include tablet() {
+        font-size: 32px;
+        margin-bottom: 16px;
+     }
+}
+
+.final-text {
+    @extend %text;
+    font-size: 12px;
+    margin-bottom: 18px;
+    text-align: center;
+    color: #5C5C5C;
+
+    @include tablet() {
+        font-size: 16px;
+        margin-bottom: 34px;
+     }
+}
+
+
+.final-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 240px;
+    height: 37px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: $btnColor;
+    color: $mainColor;
+    border-radius: 8px;
+    margin-top: 10px;
+
+    &:hover {
+        background-color: $btnHover;
+    }
+    &:focus {
+        background-color: $btnFocus;
+    }
+
+
+    @include tablet() {
+        width: 416px;
+        height: 50px;  
+        padding: 14px;  
+        font-size: 18px;
+    }
+}

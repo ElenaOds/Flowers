@@ -8,12 +8,19 @@
     const button = document.querySelector('.js-contact-button');
     const nameLabel = document.querySelector('.js-contact-name-label');
     const emailLabel = document.querySelector('.js-contact-email-label');
+    const modal = document.querySelector("[data-modal-contact]");
+  
 
     contactForm.addEventListener('submit', onFormSubmit);
     nameInput.addEventListener('input', onNameInputChange);
     emailInput.addEventListener('input', onEmailInputChange);
     nameInput.addEventListener('input', onNameInputBlur);
     emailInput.addEventListener('input', onEmailInputBlur);
+
+
+    function closeModal() {
+        modal.style.display = "none";
+    }
 
 
     function onFormSubmit(event) {
@@ -32,6 +39,8 @@
         emailInput.classList.remove('invalid');
         emailLabel.classList.remove('valid');
         emailLabel.classList.remove('invalid');
+
+        closeModal();
     }
 
     function onButtonEnabled () {
