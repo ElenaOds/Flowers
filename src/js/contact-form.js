@@ -58,8 +58,6 @@
         }
 
         onButtonEnabled();
-
-        console.log("name", nameInput.value);
     }
 
     function onEmailInputChange() {
@@ -77,7 +75,6 @@
         }
 
         onButtonEnabled();
-        console.log('email', emailInput.value);
     }
     
     function onEmailInputBlur() {
