@@ -7,6 +7,23 @@
                     <use href="./images/sprite.svg#icon-close"></use>
               </svg>
         </button>
+        <picture class="image">
+            <source srcset="
+            ./images/thank_mobile@1x.jpg 188w, 
+            ./images/thank_mobile@2x.jpg 376w" 
+            media="(max-width: 767px)" 
+            sizes="100vw"
+            loading ="lazy">
+    
+            <source srcset="
+            ./images/thank_tablet@1x.jpg 376w,
+            ./images/thank_tablet@2x.jpg 734w"
+            media="(min-width: 768px)" 
+            sizes="100vw"
+            loading ="lazy">
+    
+            <img src=" ./images/subscribe_mobile@1x.jpg" alt="Flowers">
+          </picture>
         <p class="final-title">Thank you </p>
         <p class="final-text">We have received your contact details and will reach you soon. </p>
           

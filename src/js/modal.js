@@ -20,12 +20,14 @@
       openModalBtn: document.querySelector("[data-modal-contact-open]"),
       openModalBtnOrder: document.querySelector("[data-modal-contact-open-order]"),
       closeModalBtn: document.querySelector("[data-modal-contact-close]"),
+      closeModalCurrentBtn: document.querySelector("[data-modal-contact-close-curent]"),
       modal: document.querySelector("[data-modal-contact]"),
     };
   
     refs.openModalBtn.addEventListener("click", toggleModal);
     refs.openModalBtnOrder.addEventListener("click", toggleModal);
     refs.closeModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalCurrentBtn.addEventListener("click", toggleModal);
   
     function toggleModal() {
       document.body.classList.toggle("modal-open");
