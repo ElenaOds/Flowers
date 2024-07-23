@@ -8,15 +8,15 @@
    </a>
 
    <nav class="nav">
-      <a href="#amenone" class="link-item">Anemone</a>
-      <a href="#about" class="link-item">About us</a>
-      <a href="#store" class="link-item">Store</a>
-      <a href="#delivery" class="link-item">Delivery</a>
-      <a href="#blog" class="link-item">Blog</a>
+      <a href="#amenone" class="link-item" aria-label="link to the first section">Anemone</a>
+      <a href="#about" class="link-item" aria-label="link to about section">About us</a>
+      <a href="#store" class="link-item" aria-label="link to the store section">Store</a>
+      <a href="#delivery" class="link-item" aria-label="link to delivery section">Delivery</a>
+      <a href="#blog" class="link-item" aria-label="link to blog section">Blog</a>
    </nav>
 
    <div class="burger-wrapper">
-      <a href="tel:+380631234567">
+      <a href="tel:+380631234567" aria-label="link to the telephone number">
          <svg class="tel-icon">
             <use href="./images/sprite.svg#icon-tel"></use>
          </svg>
@@ -24,7 +24,8 @@
 
       <button type="button" class="menu-toggle js-open-menu"
          aria-expanded="false" 
-         aria-controls="mobile-menu">
+         aria-controls="mobile-menu"
+         aria-label="open mobile menu button">
          <svg class="burger-icon">
             <use href="./images/sprite.svg#icon-burger"></use>
          </svg>
@@ -33,16 +34,16 @@
    <div class="menu-container js-menu-container" id="mobile-menu">
       <button type="button" 
          class="menu-toggle js-close-menu">
-               <svg class="burger-icon" area-label="mobile menu switcher">
+               <svg class="burger-icon" aria-label="mobile menu close button">
                      <use href="./images/sprite.svg#icon-close"></use>
                </svg>
       </button>
       <nav class="menu-nav js-mobile-menu">
-         <a href="#amenone" class="menu-links">Anemone</a>
-         <a href="#about" class="menu-links">About us</a>
-         <a href="#store" class="menu-links">Store</a>
-         <a href="#delivery" class="menu-links">Delivery</a>
-         <a href="#blog" class="menu-links">Blog</a>
+         <a href="#amenone" class="menu-links" aria-label="link to the first section">Anemone</a>
+         <a href="#about" class="menu-links" aria-label="link to about section">About us</a>
+         <a href="#store" class="menu-links" aria-label="link to the store section">Store</a>
+         <a href="#delivery" class="menu-links" aria-label="link to delivery section">Delivery</a>
+         <a href="#blog" class="menu-links" aria-label="link to blog section">Blog</a>
       </nav>
    </div>
 </div>

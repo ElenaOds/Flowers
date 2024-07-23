@@ -3,7 +3,7 @@
 <div class="subscribe-modal">
     <button type="button" 
         class="modal-close-button" data-modal-close>
-          <svg class="modal-close-icon" area-label="modal window switcher">
+          <svg class="modal-close-icon" aria-label="close modal window button">
                 <use href="./images/sprite.svg#icon-close"></use>
           </svg>
     </button>
@@ -38,11 +38,11 @@
     <form autocomplete="off" class="subscribe-form js-subscribe-form">
         <h3 class="form-title">Follow our newsletter</h3>
         <p class="form-text">Be the first to get exclusive offers and the latest  news on our product directly in your box.</p>
-        <label for="email" class="form-label js-subscribe-label">Email</label>
+        <label for="subscribe-email" class="form-label js-subscribe-label">Email</label>
         <div>
-            <input type="email" name="email" id="email" placeholder="Your email" class="form-input js-subscribe-input"/>
+            <input type="email" name="subscribe-email" id="subscribe-email" placeholder="Your email" class="form-input js-subscribe-input"/>
         </div>
-     <button type="submit" class="form-button js-subscribe-button" disabled>Subscribe</button>
+     <button type="submit" class="form-button js-subscribe-button" disabled aria-label="subscribe form submit button">Subscribe</button>
     </form>
 </div>
 </div>

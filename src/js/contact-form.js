@@ -33,7 +33,6 @@
         emailLabel.classList.remove('valid');
         emailLabel.classList.remove('invalid');
 
-        // closeModal();
     }
 
     function onButtonEnabled () {
