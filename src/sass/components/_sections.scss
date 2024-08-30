@@ -1,8 +1,5 @@
 .section {
   margin-bottom: 60px;
-  position: relative;
-  z-index: 10;
-
     @include tablet() {
       margin-bottom: 100px;
     }     
@@ -10,7 +7,7 @@
 
   .section-title {
     position: relative;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 24px;
     overflow: hidden;
     margin-bottom: 32px;
